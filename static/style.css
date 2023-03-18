@@ -1,4 +1,35 @@
 body {
-  background-color:teal;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
   color: orange;
+  background-color: teal;
+}
+
+a {
+  color: orange;
+}
+
+a:hover {
+  color: white;
+}
+
+ul {
+  text-align: center;
+}
+
+.ArtemisDiv {
+  color:lightgreen;
+}
+
+.HeliosDiv {
+  color: red;
+}
+
+.AthenaDiv {
+  color: purple;
+}
+
+.PoseidonDiv {
+  color: blue;
 }
