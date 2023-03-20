@@ -6,11 +6,13 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/home')
 def home():
-  return render_template('index.html', title='Home')
+  return render_template('home.html', title='Home')
+  
 
 @app.route('/about')
 def about():
   return render_template('about.html', title='About')
+  
 
 @app.route('/form', methods=['GET', 'POST'])
 def form():
@@ -28,5 +30,6 @@ def form():
           file.write(name + ' ' + Class + ' '+ house + ' ' + message + '\n')
         return render_template('thankyou.html', title='Thank You', name=name, Class=Class, house=house, message=message)
     return render_template('form.html', title='Feedback Form')
+    
 
 app.run(host='0.0.0.0', port=81)

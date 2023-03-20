@@ -7,6 +7,15 @@ body {
   font-size: 15px;
 }
 
+img {
+  height: 150px;
+  width: 150px;
+}
+
+.topimage {
+  heigt: 168px;
+  width: 300px;
+}
 
 a {
   color: orange;
@@ -43,5 +52,5 @@ input[type=text] {
 }
 
 .easteregg {
-  display:none
+  display: none
 }
