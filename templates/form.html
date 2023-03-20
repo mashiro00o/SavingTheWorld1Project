@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+<h1>Feedback and Suggestion form</h1><br>
+    <h5>Do you have any questions or suggestions? Please feel free to ask us anything or proivude any feedback. We thank you for your time!</h5><br><br>
+    
+  
+      <form method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="Class">Class:</label>
+        <input type="text" id="Class" name="Class"><br>
+        
+        <label for="house">House:</label>
+        <input type="radio" id="artemis" name="house" value="Artemis">
+        <label for="artemis">Artemis</label>
+        <input type="radio" id="helios" name="house" value="Helios">
+        <label for="helios">Helios</label>
+        <input type="radio" id="athena" name="house" value="Athena">
+        <label for="athena">Athena</label>
+        <input type="radio" id="poseidon" name="house" value="Poseidon">
+        <label for="poseidon">Poseidon</label><br>
+
+        <label for="message">Feedback:</label>
+        <input type="text" id="message" name="message"><br><br>
+        
+        <input type="submit" value="Submit">   
+        
+       </form>
+
+{% endblock content %}

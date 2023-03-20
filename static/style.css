@@ -7,10 +7,6 @@ body {
   font-size: 15px;
 }
 
-image {
-  max-height:100px;
-  max-width:100px;
-}
 
 a {
   color: orange;
@@ -40,6 +36,10 @@ a:hover {
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
+}
+
+input[type=text] {
+  color: black;
 }
 
 .easteregg {
