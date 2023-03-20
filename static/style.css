@@ -7,6 +7,11 @@ body {
   font-size: 15px;
 }
 
+image {
+  max-height:100px;
+  max-width:100px;
+}
+
 a {
   color: orange;
 }
@@ -15,9 +20,6 @@ a:hover {
   color: white;
 }
 
-ul {
-  text-align: center;
-}
 
 .ArtemisDiv {
   color:lightgreen;
