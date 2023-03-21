@@ -18,17 +18,19 @@ def about():
 def form():
     name = None
     Class = None
+    email = None
     house = None
     message = None
     if request.method == 'POST':
         # Handle form submission
         name = request.form.get('name')
+        email = request.form.get('email')
         Class = request.form.get('Class')
         house = request.form.get('house')
         message = request.form.get('message')
         with open('data.txt', 'a') as file:
-          file.write(name + ' ' + Class + ' '+ house + ' ' + message + '\n')
-        return render_template('thankyou.html', title='Thank You', name=name, Class=Class, house=house, message=message)
+          file.write(name + ' ' + Class + ' '+ email + ' ' + house + ' ' + message + '\n')
+        return render_template('thankyou.html', title='Thank You', name=name, email=email, Class=Class, house=house, message=message)
     return render_template('form.html', title='Feedback Form')
     
 
